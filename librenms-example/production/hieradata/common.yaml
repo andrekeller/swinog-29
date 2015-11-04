@@ -1,0 +1,10 @@
+---
+classes:
+  - swinog::librenms
+  - swinog::ssl::snakeoil
+
+
+swinog::librenms::hostname: 'localhost'
+swinog::librenms::port: 10443
+swinog::librenms::database_librenms_password: 'librenmspassw0rd!'
+swinog::librenms::database_root_password: 'rootpassw0rd!'

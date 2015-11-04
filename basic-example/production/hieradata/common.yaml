@@ -1,0 +1,21 @@
+---
+classes:
+  - nginx
+  - identity
+
+# use the nginx version from the base OS
+nginx::manage_repo: false
+
+nginx::nginx_vhosts:
+  'swinog':
+    www_root: '/var/www'
+
+# users
+users:
+  'swinog':
+    ensure: present
+    comment: 'Swinog Testuser'
+    ssh_keys:
+      'primary_key':
+        key: 'AAAA...'
+
