@@ -21,7 +21,8 @@ cd /etc/puppetlabs/code/environments/production
 ### Basic example
 
 The basic example will install a simple webserver that will serve the
-webpage out of the `webroot` folder on http://localhost:10080.
+webpage out of the `webroot` folder on:
+[http://localhost:10080](http://localhost:10080).
 
 Additional the module demonstrates how to add a system user, including
 an ssh public key for authentication.
@@ -41,7 +42,7 @@ of [LibreNMS](https://www.librenms.org) including database, php and nginx.
 This is done within a custom module called `swinog`
 
 After the initial puppet run, the librenms installer is available at
-https://localhost:10443.
+[https://localhost:10443](https://localhost:10443).
 
 **IMPORTANT**: Use localhost, not 127.0.0.1 to connect. (This is an issue with
 how LibreNMS handles external resources. Otherwise you wont get any CSS and 
